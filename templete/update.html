@@ -1,6 +1,6 @@
 {% extends 'kuku.html' %}
 {% block content %}
-<form  method = 'POST'
+<form  method = 'POST'>
        {% csrf_token %}
        {{form}}
        <button type = "submit" class="btn btn-primary">update</button>

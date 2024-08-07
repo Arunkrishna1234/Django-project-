@@ -38,7 +38,7 @@ def customer_update(request,id):
         data = CustomerForm(request.POST)
         if data.is_valid():
             data.save()
-            return  redirect("customer_view")
+            return redirect("customer_view")
     return render(request,'update.html',{'form':form})
 
 
