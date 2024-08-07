@@ -7,8 +7,8 @@ class customer(models.Model):
         ('10 year','1 year'),
         ('1 month','2 month')
     )
-    name=models.CharField(max_length=50)
-    age=models.IntegerField()
-    MobileNumber=models.IntegerField()
-    email=models.EmailField()
-    plan=models.CharField(max_length=30,choices=plan_category)
+    name = models.CharField(max_length=50)
+    age = models.IntegerField()
+    MobileNumber = models.IntegerField()
+    email = models.EmailField()
+    plan = models.CharField(max_length=30,choices=plan_category)
